@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	_ "github.com/godror/godror"
+	_ "github.com/luochaoqun01/gorm-dm8/dm"
 	"github.com/thoas/go-funk"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"
@@ -51,7 +51,7 @@ func (d Dialector) Initialize(db *gorm.DB) (err error) {
 	// register callbacks
 	callbacks.RegisterDefaultCallbacks(db, &callbacks.Config{WithReturning: true})
 
-	d.DriverName = "godror"
+	d.DriverName = "dm"
 
 	if d.Conn != nil {
 		db.ConnPool = d.Conn
