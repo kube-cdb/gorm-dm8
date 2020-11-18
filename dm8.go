@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	_ "github.com/luochaoqun01/gorm-dm8/dm"
+	_ "github.com/luochaoqun01/dm"
 	"github.com/thoas/go-funk"
 	"gorm.io/gorm"
 	"gorm.io/gorm/callbacks"
