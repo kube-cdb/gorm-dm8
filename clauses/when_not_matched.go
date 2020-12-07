@@ -16,7 +16,7 @@ func (w WhenNotMatched) Name() string {
 func (w WhenNotMatched) Build(builder clause.Builder) {
 	if len(w.Columns) > 0 {
 		if len(w.Values.Values) != 1 {
-			panic("cannot insert more than one rows due to DM8 SQL language restriction")
+			panic("cannot insert more than one rows due to Oracle SQL language restriction")
 		}
 
 		builder.WriteString(" THEN")

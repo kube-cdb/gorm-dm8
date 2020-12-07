@@ -1,4 +1,4 @@
-package dm8
+package oracle
 
 import (
 	"strings"
